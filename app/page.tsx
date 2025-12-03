@@ -1,7 +1,20 @@
 import Image from "next/image";
+import Header from "../src/components/Header";
+import Hero from "../src/components/Hero";
+import PopularServices from "../src/components/PopularServices";
+import Testimonials from "../src/components/Testimonials";
+import Footer from "../src/components/Footer";
 
 export default function Home() {
   return (
-    <h1 className="bg-amber-200 text-2xl text-amber-700">asdfadsfasdf</h1>
+    <>
+      <Header/>
+      <main>
+        <Hero/>
+        <PopularServices/>
+        <Testimonials/>
+      </main>
+      <Footer/>
+    </>
   );
 }
